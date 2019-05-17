@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllergyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA"
+            tools:context=".Allergy">
+
+            <!-- TODO: Update blank fragment layout -->
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="171dp"
+                android:layout_height="166dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+
+                android:visibility="visible"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="24dp"
+                app:cardMaxElevation="100dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:elevation="25dp"
+                    android:paddingTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/coklat"
+                    tools:layout_conversion_absoluteHeight="166dp"
+                    tools:layout_conversion_absoluteWidth="171dp"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="111dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1dp"
+                    android:text="Chocolate"
+                    android:textAlignment="center"
+                    android:textColor="#221713"
+                    app:fontFamily="@font/roboto_condensed_light" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="All the recipes in Foodizz won’t be shown \nif it consists one of the ingredients below"
+                android:textColor="#221713"
+                android:textSize="18sp"
+                app:fontFamily="@font/roboto_condensed_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="171dp"
+                android:layout_height="166dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="24dp"
+                app:cardMaxElevation="24dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.09">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:elevation="25dp"
+                    android:paddingTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/peanut"
+                    tools:layout_conversion_absoluteHeight="166dp"
+                    tools:layout_conversion_absoluteWidth="171dp"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="111dp"
+                    tools:src="@drawable/peanut" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1dp"
+                    android:text="Peanut"
+                    android:textAlignment="center"
+                    android:textColor="#221713"
+                    app:fontFamily="@font/roboto_condensed_light" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="297dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#D19F84"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:shape="rectangle"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="173dp"
+                android:layout_height="166dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="24dp"
+                app:cardMaxElevation="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="1dp"
+                    android:text="Cheese"
+                    android:textAlignment="center"
+                    android:textColor="#221713"
+                    app:fontFamily="@font/roboto_condensed_light" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:elevation="25dp"
+                    android:paddingTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/keju"
+                    tools:layout_conversion_absoluteHeight="166dp"
+                    tools:layout_conversion_absoluteWidth="171dp"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="111dp" />
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

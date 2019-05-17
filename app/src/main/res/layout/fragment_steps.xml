@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/playerfragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <VideoView
+                android:id="@+id/videoPattaya"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/resep_pattaya"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:text="\n1. Tumis bawang putih dan bawang merah hingga harum. Masukkan ayam, wortel dan kacang polong.
+        \n2.Tumis hingga ayam matang dan sayur terlihat sudah empuk.
+        \n3.Masukkan saus, kecap asin, garam dan merica sesuai selera. Tumis sebentar hingga bumbu tercampur rata.
+        \n4.Di penggorengan lain, goreng telur yang sudah dikocok, buat agak lebar dan tipis saja.
+        \n5. Tabur sedikit garam. Setelah matang, tempatkan telur di atas piring. Tuang nasi goreng di tengah-tengah telur dadar.
+        \n6. Lipat pinggiran telur dadar hingga menutupi nasi goreng. Balik nasi goreng balut telur dadar ini di piring lainnya."
+                android:textColor="#333333"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/videoPattaya">
+
+            </TextView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>
